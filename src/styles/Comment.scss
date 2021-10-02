@@ -1,0 +1,41 @@
+.Comment {
+  display: flex;
+  flex-direction: column;
+  border: none;
+
+  .commentHeader {
+    align-items: center;
+    display: flex;
+
+    .profileIcon {
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+    }
+    h4 {
+      display: inline;
+      margin: 0 0.5rem;
+    }
+
+    p {
+      margin: 0 0.5rem;
+    }
+
+    a {
+      color: #000;
+      margin-left: 0.5rem;
+      text-decoration: none;
+      transition: color 0.1s ease-in-out;
+    }
+
+    a:hover {
+      color: #ff4500;
+    }
+
+  }
+
+  .commentBody {
+    margin: 0.5rem 1rem;
+  }
+
+}

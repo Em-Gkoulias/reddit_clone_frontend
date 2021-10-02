@@ -1,0 +1,14 @@
+.ShowPost {
+  display: flex;
+  flex-direction: column;
+
+  .PostContainer {
+    border: none;
+    width: 100%;
+  }
+
+  .commentAs {
+    margin: 0 1rem;
+  }
+
+}

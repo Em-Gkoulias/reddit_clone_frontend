@@ -1,0 +1,52 @@
+.ProfileDetails {
+    // background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    img {
+      border-radius: 50%;
+      height: 70px;
+      width: 70px;
+    }
+
+    .header {
+      display: flex;
+      margin: 0 1rem;
+      // justify-content: space-between;
+
+      h2 {
+        margin: 0 1rem;
+      }
+
+      h4 {
+        margin: 0 1rem;
+      }
+
+      a {
+        background-color: #ff4500;
+        color: #eee;
+        // border: 1px solid red;
+        border-radius: 15px;
+        height: fit-content;
+        margin-left: auto;
+        padding: 1rem;
+        text-decoration: none;
+        transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+      }
+
+      a:hover {
+        background-color: #ff1500;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    .aboutMe {
+      display: flex;
+      margin: 2rem 1rem 0 1rem;
+    }
+
+  }

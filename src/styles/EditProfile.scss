@@ -1,0 +1,50 @@
+.EditProfile {
+  // background-color: aqua;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 99%;
+
+  .header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+
+    .imageUpload {
+      // background-color: aqua;
+      align-items: center;
+      display: flex;
+      // justify-content: space-between;
+
+      img {
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        margin-right: 1rem;
+      }
+    }
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    width: 99%;
+
+    textarea {
+      font-family: 'Ubuntu', sans-serif;
+      padding: 0.5rem;
+      resize: none;
+    }
+
+    button {
+      margin: 0.5rem 0;
+      align-self: center;
+      width: 60px;
+    }
+  }
+}

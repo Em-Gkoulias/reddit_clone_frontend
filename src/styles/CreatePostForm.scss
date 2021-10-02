@@ -1,0 +1,42 @@
+.CreatePostForm {
+  // background-color: aqua;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  width: 99%;
+
+  h2 {
+    // background-color: aqua;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    width: 99%;
+
+    textarea {
+      font-family: 'Ubuntu', sans-serif;
+      // background-color: red;
+      // height: 1rem;
+      padding: 0.5rem;
+      resize: none;
+    }
+
+    #title {
+      height: 1.1rem;
+    }
+    #text {
+      height: 5rem;
+    }
+
+    button {
+      margin: 0.5rem 0;
+      align-self: center;
+      width: 60px;
+    }
+  }
+}

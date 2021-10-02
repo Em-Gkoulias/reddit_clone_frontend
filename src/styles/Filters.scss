@@ -1,0 +1,13 @@
+.Filters {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 30px;
+  }
+
+  .dropdown {
+    display: flex;
+  }
+}

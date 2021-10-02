@@ -1,0 +1,27 @@
+.PostContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 80px;
+
+  .details {
+    align-items: center;
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .leftSide {
+    background-color: #f7f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .rightSide {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+}

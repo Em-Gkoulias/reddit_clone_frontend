@@ -1,0 +1,21 @@
+.Comments {
+  margin: 1rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    
+    textarea {
+      // margin: ;
+      font-family: 'Ubuntu', sans-serif;
+      padding: 0.5rem;
+      resize: none;
+    }
+
+    button {
+      margin: 0.5rem 1rem;
+      align-self: flex-end;
+      width: 60px;
+    }
+  }
+}
