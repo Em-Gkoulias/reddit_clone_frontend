@@ -1,4 +1,5 @@
-# UI Part - Still Under Construction
+# UI Part
+Still Under Construction
 
 This project is going to b a Reddit clone. It is separated in two parts, one that contains the API and one that contains the UI.
 
