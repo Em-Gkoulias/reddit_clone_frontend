@@ -4,9 +4,10 @@ import { useEffect, useState } from "react/cjs/react.development";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const Comment = ({ userId, text }) => {
+const Comment = ({ userId, text}) => {
   const [isLoading, setIsLoading] = useState(true);
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState({});
+  const [image, setImage] = useState("")
 
   useEffect(() => {
     axios
@@ -14,7 +15,7 @@ const Comment = ({ userId, text }) => {
       .then((res) => {
         console.log(res.data);
         setUser(res.data);
-        // setImage();
+        setImage(res.data.image)
         setIsLoading(false);
       })
       .catch((err) => console.log(err));
@@ -29,11 +30,16 @@ const Comment = ({ userId, text }) => {
   return (
     <div className="Comment container">
       <div className="commentHeader">
-        <img
+        {console.log(image)}
+        {image ? <img
           className="profileIcon"
           src={`http://localhost:5000/uploads/${user.username}.jpg`}
           alt=""
-        />
+        /> : <img
+          className="profileIcon"
+          src={profileIcon}
+          alt=""
+        />}
         <Link to={`/profiles/${user.id}`}>
           <b>{user.username}</b>
         </Link>

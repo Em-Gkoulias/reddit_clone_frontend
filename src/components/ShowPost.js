@@ -24,7 +24,6 @@ const ShowPost = ({ user }) => {
   } else {
     return (
       <div className="ShowPost container">
-        {console.log(post)}
         <PostContainer className="PostContainer" post={post} user={user} />
         <p className="commentAs">Comment as user</p>
         <Comments post={post} user={user} />

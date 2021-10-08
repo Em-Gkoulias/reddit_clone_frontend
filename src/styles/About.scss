@@ -1,5 +1,19 @@
 .About {
-  // background-color: aqua;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+  }
+
+  h4 {
+    margin-bottom: 0;
+    // margin-top: 2rem;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
 }

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react/cjs/react.development";
 import "../styles/EditProfile.scss";
+import defaultImage from "../images/monster0.svg"
 
 const EditProfile = ({ user }) => {
   const url = window.location.href
@@ -56,15 +57,26 @@ const EditProfile = ({ user }) => {
 
   return (
     <div className="EditProfile container">
-      {console.log(user)}
       <form onSubmit={handleSubmit} encType="multipart/form-data">
         <div className="header">
           <h2>Choose an image for your profile</h2>
           <div className="imageUpload">
-            <img
+            {console.log(imageName)}
+            {imageName ? (
+              <img
+                src={`http://localhost:5000/uploads/${user.username}.jpg`}
+                alt=""
+              />
+            ) : (
+              <img
+                src={defaultImage}
+                alt=""
+              />
+            )}
+            {/* <img
               src={`http://localhost:5000/uploads/${user.username}.jpg`}
               alt=""
-            />
+            /> */}
             <input
               type="file"
               name="image"

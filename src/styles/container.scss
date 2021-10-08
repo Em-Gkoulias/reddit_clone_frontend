@@ -1,6 +1,7 @@
 .container {
   box-sizing: border-box;
-  background-color: #d3d3d3;
+  // background-color: #d3d3d3;
+  background-color: #fff;
   border: 1px solid #818384;
   border-radius: 3px;
   margin-bottom: 1rem;
@@ -9,7 +10,8 @@
 
 .containerSmall {
   align-items: center;
-  background-color: #d3d3d3;
+  // background-color: #d3d3d3;
+  background-color: #fff;
   border: 1px solid #818384;
   border-radius: 30px;
   display: flex;
