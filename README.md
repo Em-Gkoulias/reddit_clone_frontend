@@ -1,71 +1,15 @@
-# Getting Started with Create React App
+# UI Part
+Still Under Construction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is going to b a Reddit clone. It is separated in two parts, one that contains the API and one that contains the UI. You can find the other part right here https://github.com/Em-Gkoulias/reddit_clone_backend/blob/main/README.md.
 
-## Available Scripts
+This is the UI part. It is completely made using ReactJs and I have used react-router-dom in order to handle routing. All API request are made with axios.
 
-In the project directory, you can run:
+The user needs to create an account in order to be able to enter the website. After that a main page will appear with all the posts that have been created by users. There are three filters that allows user to choose what posts to appear on top. The default one is the "Best" filter which brings on top the posts that have best upvotes/downvotes score. The second one is the "Hot" filter that brings on top the posts that have the most comments and the last one is the "Fresh" which brings on top the latest posts. Each user can edit his profile image and add some text about him, see other people profiles, add comments to posts,create his own posts as well as upvote or downvote posts. 
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# reddit_clone_frontend
+# Need to be done
+- Make sure that the email address in register page is not just some text but has the proper email syntax
+- Complete the about page which provides iformation about the page
+- Use datetime in order to show the users when each post and comment was created
+- Add default image to users when they have not add one
+- Create communities just like Reddit and add each post on a category
