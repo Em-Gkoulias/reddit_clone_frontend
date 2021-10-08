@@ -52,15 +52,26 @@ const ProfileHistory = ({ profile }) => {
     <div className="ProfileHistory">
       <div className="categories">
         <div className="buttons">
-          <button onClick={postsClicked}>
-            <h4>Posts by user</h4>
-          </button>
-          <button onClick={commentsClicked}>
-            <h4>Comments by user</h4>
-          </button>
+          {category === "posts" ? (
+            <button className="active" onClick={postsClicked}>
+              <h4>Posts by user</h4>
+            </button>
+          ) : (
+            <button className="inActive" onClick={postsClicked}>
+              <h4>Posts by user</h4>
+            </button>
+          )}
+          {category === "comments" ? (
+            <button className="active" onClick={commentsClicked}>
+              <h4>Comments by user</h4>
+            </button>
+          ) : (
+            <button className="inActive" onClick={commentsClicked}>
+              <h4>Comments by user</h4>
+            </button>
+          )}
         </div>
         <div className="container">
-          {console.log(comments)}
           {category === "posts"
             ? posts.map((post) => {
                 return (
@@ -71,7 +82,10 @@ const ProfileHistory = ({ profile }) => {
               })
             : comments.map((comment) => {
                 return (
-                  <div className="historyListItem commentListItem" onClick={(e) => handleClick(comment.post_id)}>
+                  <div
+                    className="historyListItem commentListItem"
+                    onClick={(e) => handleClick(comment.post_id)}
+                  >
                     <Comment userId={profile.id} text={comment.text} />
                   </div>
                 );

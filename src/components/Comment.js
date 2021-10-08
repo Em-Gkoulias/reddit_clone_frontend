@@ -5,6 +5,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Comment = ({ userId, text}) => {
+  const url = window.location.href;
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState({});
   const [image, setImage] = useState("")

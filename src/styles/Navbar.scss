@@ -7,7 +7,6 @@
   width: 100%;
 
   .leftNav {
-    // background-color: aqua;
     align-items: center;
     display: flex;
     margin: 0 0.5rem;
@@ -17,8 +16,11 @@
     }
 
     img {
-      margin: 0 0.5rem;
       height: 50px;
+    }
+
+    h1 {
+      padding: 0 0.5rem;
     }
   }
 
@@ -36,7 +38,6 @@
 
     .navbarMenu {
       background-color: black;
-      // padding: 1rem;
       position: absolute;
       top: 2.5rem;
       right: 1rem;
@@ -50,7 +51,6 @@
       }
 
       .menuItem {
-        // border: 1px solid #818384;
         color: white;
         display: block;
         margin: 0;
